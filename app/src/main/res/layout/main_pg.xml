@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Saludo -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola! Nombre_usuario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="44dp"
+        android:paddingBottom="8dp"
+        android:textColor="#000000" />
+
+    <!-- Imagen de fruta -->
+    <ImageView
+        android:id="@+id/fruitImage"
+        android:layout_width="326dp"
+        android:layout_height="287dp"
+        android:layout_gravity="center"
+        android:contentDescription="Fruta"
+        android:src="@drawable/naranja" />
+
+    <!-- Fondo gris claro para contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Globo de diálogo -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bubble"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dialogText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis fringilla dui. Curabitur a arcu sit amet eros vulputate consequat."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    <!-- Botón -->
+        <Button
+            android:id="@+id/btnTellMeSomething"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuéntame algo"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="88dp"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp"
+            android:background="@drawable/btn_seleccion" />
+    </LinearLayout>
+
+    <!-- Bottom navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#121C26"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home_btn"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/navVid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/video"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/navEsc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/question_mark"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
