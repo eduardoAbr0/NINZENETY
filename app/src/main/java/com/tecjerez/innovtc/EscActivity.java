@@ -27,10 +27,5 @@ public class EscActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        escBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(EscActivity.this, EscActivity.class);
-            startActivity(intent);
-        });
-
     }
 }

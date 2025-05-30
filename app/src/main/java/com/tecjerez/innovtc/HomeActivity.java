@@ -21,11 +21,6 @@ public class HomeActivity extends AppCompatActivity {
         ImageButton vidBtn = findViewById(R.id.navVid);
         ImageButton escBtn = findViewById(R.id.navEsc);
 
-        homeBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
-            startActivity(intent);
-        });
-
         vidBtn.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, VidActivity.class);
             startActivity(intent);

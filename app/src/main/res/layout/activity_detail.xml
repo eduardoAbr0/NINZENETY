@@ -8,30 +8,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".DetailActivity">
+
     <TextView
+        android:id="@+id/detailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/detailTitle"
         android:layout_marginTop="14dp"
         android:text="Titulo"
         android:textSize="24sp"
         android:layout_gravity="center"
         android:textColor="@color/black"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp" />
+
     <WebView
         android:id="@+id/detailVid"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:padding="8dp"
-        android:layout_gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
+        android:layout_gravity="center" />
+
+    <!-- Bubble container -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Descripción de video"
-        android:padding="20dp"
-        android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:id="@+id/detailDesc"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="24dp"
+        android:background="@drawable/bubble2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/detailDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="200dp"
+            android:text="Descripción de video"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/orangeImage"
+        android:layout_width="195dp"
+        android:layout_height="202dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Imagen de naranja"
+        android:src="@drawable/naranja" />
+
 </LinearLayout>
