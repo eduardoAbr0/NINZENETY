@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Realicemos un escaneo corporal\nNombre_usuario"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingTop="24dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Pregunta 1 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo sientes tu cabeza?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E6F0FA"
+        android:padding="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <ImageButton
+            android:id="@+id/btnLeftHead"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+
+        <TextView
+            android:id="@+id/headFeeling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Liviana"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRightHead"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/right_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+    </LinearLayout>
+
+    <!-- Repite la misma estructura para brazos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo sientes tus brazos?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E6F0FA"
+        android:padding="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <ImageButton
+            android:id="@+id/btnLeftArms"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+
+        <TextView
+            android:id="@+id/armsFeeling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Ligeros"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRightArms"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/right_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+    </LinearLayout>
+
+    <!-- Repite para pecho -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo sientes tu pecho?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E6F0FA"
+        android:padding="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <ImageButton
+            android:id="@+id/btnLeftChest"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+
+        <TextView
+            android:id="@+id/chestFeeling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pesado"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRightChest"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/right_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+    </LinearLayout>
+
+    <!-- Repite para general -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo te sientes en general?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E6F0FA"
+        android:padding="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <ImageButton
+            android:id="@+id/btnLeftGeneral"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+
+        <TextView
+            android:id="@+id/generalFeeling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Feliz"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRightGeneral"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/right_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+    </LinearLayout>
+
+    <!-- Repite ... -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="......."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E6F0FA"
+        android:padding="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <ImageButton
+            android:id="@+id/btnLeftEtc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/left_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+
+        <TextView
+            android:id="@+id/etcFeeling"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRightEtc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/right_arrow"
+            android:background="@drawable/btn_seleccion"
+            />
+    </LinearLayout>
+
+    <!-- Botón principal -->
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Responder"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/btn_seleccion" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom nav -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#121C26"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home_btn"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/navVid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/video"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/navEsc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/question_mark"
+            android:background="@android:color/transparent"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
