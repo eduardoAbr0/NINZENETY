@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/fruitImage"
+            android:layout_width="389dp"
+            android:layout_height="333dp"
+            android:src="@drawable/naranja" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea a tu compañero!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000" />
+
+        <!-- Campo de nombre -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:textColorHint="#aea19e"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/edittext_backg"
+            android:padding="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Fila de selección de fruta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevFruit"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/left_arrow"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fruta"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnNextFruit"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/right_arrow"
+                />
+        </LinearLayout>
+
+        <!-- Fila de selección de color -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevColor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/left_arrow"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Color"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnNextColor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/right_arrow"
+                />
+        </LinearLayout>
+
+        <!-- Fila de selección etc -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevRostro"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/left_arrow"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rostro"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnNextRostro"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/right_arrow"
+                />
+        </LinearLayout>
+
+        <!-- Fila de selección etc -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevEtc"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/left_arrow"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="....."
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnNextEtc"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_seleccion"
+                android:src="@drawable/right_arrow"
+                />
+        </LinearLayout>
+
+        <!-- Botón CREAR -->
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#339CFF"
+            android:layout_marginTop="32dp"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="16dp" />
+
+    </LinearLayout>
+</ScrollView>
